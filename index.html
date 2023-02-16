@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/main.css">
+    <title>Tailwind CSS Portfolio</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+      <header class=" p-6 text-white bg-blue-500">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <h1 class="text-2xl text-white font-header font-bold">NANCY OLATUJA</h1>
+       
+        <nav class="text-white md:flex items-center hidden">
+          <ul class="flex font-text">
+            <li class="mr-6"><a href="#about" class="hover:text-yellow-500 hover:border-b-2">About Me</a></li>
+            <li class="mr-6"><a href="#skills" class="hover:text-yellow-500 hover:border-b-2">Skillset</a></li>
+            <li class="mr-6"><a href="#projects" class="hover:text-yellow-500 hover:border-b-2">Projects</a></li>
+            <li><a href="#contact" class="hover:text-yellow-500 hover:border-b-2">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    
+<!--ABOUT ME-->
+    <section class="bg-yellow-400 py-12 border-2 " id="about">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:gap-24">
+          <div class="mx-auto md:ml-0 md:mr-auto max-w-md">
+            <img src="images/hii.png" class="border-4 border-solid shadow-lg rounded-md border-blue-500"
+            alt=""/>
+          </div>
+          <div class="max-w-45vw my-10 py-15 md:mt-8">
+            <p class="text-white font-semibold md:text-xl">
+              I'm <span class="font-bold text-blue-500">Nancy</span>, a Frontend Developer<br>
+        My goal is to use various markup and programming languages to create new interactive, accessible, functional, and creative user-facing features, while also taking reusability and page loading optimization into account.<br>
+        Asides coding my other <span class="font-bold text-blue-500">Hobbies</span> include: Baking, Reading Novels, Nature Photography, playing guitar and learning a new language.<br>
+       <span class="font-bold text-blue-500">My likes</span> : Coffee, Chocolate, Lofi-Mix, Long walks and Aesthetic pictures
+            </p>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+<!--Skillset-->
+<!--Skillset-->   
+ <section class="box bg-blue-500 text-white font-text py-12" id="skills">
+  <div class="container mx-auto px-6">
+     <h1 class="pb-5 text-4xl font-bold text-center mb-8"><span class="text-yellow-400 font-header">SKILL</span>SET</h1>
+    <div class="flex flex-wrap justify-center text-center">
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">HTML</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400 ">CSS</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">GIT</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">GITHUB</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">JAVASCRIPT</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">TAILWINDCSS</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">CANVA</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">TEAMWORK</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">CREATIVITY</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">PROBLEM SOLVING</div>
+     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">G-SUITES</div>
+    </div>
+  </div>
+  
+  </section>
+
+ <!--Projects-->
+    <section class=" bg-yellow-400 py-12" id="projects">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-white text-center mb-8">MY <span class="text-blue-500">PROJECTS</span></h2>
+        <div class="flex flex-wrap -mx-6">
+          <div class="w-full md:w-1/2 px-6">
+            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2">Landing page</h3>
+              <p class="text-white leading-loose mb-4">My frontendmentor submission for the sunnyside landing page. It can beviewed on different screensize and I used semantic HTML, CSS, and a little JavaScript for the mobile menu.</p>
+              <a href="https://sunnyside-agency-landing-page-main-ptga.vercel.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
+            </div>
+          </div>
+					
+          <div class="w-full md:w-1/2 px-6">
+            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2">Restaurant Webpage</h3>
+              <p class="text-white leading-loose mb-4">One of my favourite projects, I created the logo and giftcards with Canva, website was made with HTML, CSS and a little of JavaScript for the mobile menu. It works on different screen size too</p>
+              <a href="https://cuisineint.netlify.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex flex-wrap -mx-6">
+         <div class="w-full md:w-1/2 px-6">
+              <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Netflix-Landing Page</h3>
+                <p class="text-white leading-loose mb-4">This is a netflix clone made with semantic HTML and CSS. I used my knowledge on HTML to create the video embedded in an imsge</p>
+                <a href="https://stuternnetflixliveproject.netlify.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
+              </div>
+            </div>
+					
+          <div class="w-full md:w-1/2 px-6">
+            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2">My Instagram Home Page</h3>
+              <p class="text-white leading-loose mb-4">Created with HTML and CSS, I made the homepage of my instagram account</p>
+              <a href="https://stuternnetflixliveproject.netlify.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap -mx-6">
+            
+            
+          <div class="w-full md:w-1/2 px-6">
+            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2">Udemy-Landing Page</h3>
+              <p class="text-white leading-loose mb-4">Udemy landing page clone. I used HTML and CSS to recreate it and emphasis on positions for the various aspects, it is not mobile responsive</p>
+              <a href="https://udemyclone-stuternproject.netlify.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 px-6">
+            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2">Others</h3>
+              <p class="text-white leading-loose mb-4">Some of my projects are still in development phase.</p>
+              <a href="#" class="text-white hover:text-blue-700" target="_blank">More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blue-500 py-12" id="contact">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-white mb-8 text-center">CONTACT <span class="text-yellow-400">ME</span> </h2>
+        <div class="flex flex-wrap justify-center">
+          <div class="p-6 text-center">
+            <a href="mailto:olatujanancy@gmail.com" class="inline-block" target="_top">
+              <img src="images/bxl-gmail.svg" alt="gmail " class="w-20 h-20 object-cover hover:shadow-md border border-yellow-400 m-3 p-2 rounded-md hover:bg-yellow-400">
+            </a>
+            <a href="https://github.com/moni-nancy" class="inline-block" target="_top">
+              <img src="images/bxl-github.svg" alt="github " class="w-20 h-20 object-cover hover:shadow-md border border-yellow-400 m-3 p-2 rounded-md hover:bg-yellow-400">
+            </a>
+            <a href="https://twitter.com/Nancy_Olatuja" class="inline-block" target="_top">
+              <img src="images/bxl-twitter.svg" alt="twitter " class="w-20 h-20 object-cover hover:shadow-md border border-yellow-400 m-3 p-2 rounded-md hover:bg-yellow-400">
+            </a>
+            <a href="www.linkedin.com/in/olatuja-nancy" class="inline-block" target="_top">
+              <img src="images/bxl-linkedin.svg" alt="linkedin " class="w-20 h-20 object-cover hover:shadow-md border border-yellow-400 m-3 p-2 rounded-md hover:bg-yellow-400">
+            </a>
+					</div>
+					</div>
+			</div>
+		</section>
+
+		<footer class="bg-yellow-400 text-white py-4">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-center items-center">
+          <p class="text-sm">© 2023 My Portfolio. All Rights Reserved.</p>
+          
+					</div>
+				</div>
+			</footer>
+    
+		</body>
+	</html>
