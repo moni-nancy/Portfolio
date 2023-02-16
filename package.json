@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./style.css -o ./css/main.css",
-    "watch": "tailwindcss -i ./style.css -o ./css/main.css --watch"
+    "postinstall": "chmod +x node_modules/.bin/tailwindcss",
+    "dev": "tailwindcss -i ./style.css -o ./css/main.css --watch"
   },
   "keywords": [],
   "author": "",

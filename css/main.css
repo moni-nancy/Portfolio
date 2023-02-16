@@ -766,6 +766,31 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+/* Media queries for responsive design */
+
+@media (min-width: 768px) {
+  .px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
 }
@@ -825,4 +850,3 @@ video {
     line-height: 1.75rem;
   }
 }
-
