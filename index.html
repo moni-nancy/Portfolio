@@ -4,162 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="/public/css/main.css">
-    <title>Tailwind CSS Portfolio</title>
+    <title>Nancy Olatuja</title>
 		<script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-      <header class=" p-6 text-white bg-blue-500">
-      <div class="container mx-auto flex justify-between items-center px-6">
-        <h1 class="text-2xl text-white font-header font-bold">NANCY OLATUJA</h1>
-       
-        <nav class="text-white md:flex items-center hidden">
-          <ul class="flex font-text">
-            <li class="mr-6"><a href="#about" class="hover:text-yellow-500 hover:border-b-2">About Me</a></li>
-            <li class="mr-6"><a href="#skills" class="hover:text-yellow-500 hover:border-b-2">Skillset</a></li>
-            <li class="mr-6"><a href="#projects" class="hover:text-yellow-500 hover:border-b-2">Projects</a></li>
-            <li><a href="#contact" class="hover:text-yellow-500 hover:border-b-2">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    
-    
-<!--ABOUT ME-->
-    <section class="bg-yellow-400 py-12 border-2 " id="about">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row md:gap-24">
-          <div class="mx-auto md:ml-0 md:mr-auto max-w-md">
-            <img src="images/hii.png" class="border-4 border-solid shadow-lg rounded-md border-blue-500"
-            alt=""/>
-          </div>
-          <div class="max-w-45vw my-10 py-15 md:mt-8">
-            <p class="text-white font-semibold md:text-xl">
-              I'm <span class="font-bold text-blue-500">Nancy</span>, a Frontend Developer<br>
-        My goal is to use various markup and programming languages to create new interactive, accessible, functional, and creative user-facing features, while also taking reusability and page loading optimization into account.<br>
-        Asides coding my other <span class="font-bold text-blue-500">Hobbies</span> include: Baking, Reading Novels, Nature Photography, playing guitar and learning a new language.<br>
-       <span class="font-bold text-blue-500">My likes</span> : Coffee, Chocolate, Lofi-Mix, Long walks and Aesthetic pictures
-            </p>
-          </div>
-          
+  <body>    
+  <nav class=" bg-gray-900 relative container mx-auto p-6">
+    <div class="flex items-center justify-between">
+    <!--Logo-->
+<div class="pt-2 text-white flex item-center flex-row font-extrabold">
+  <img src="images/white-heart.gif" class="w-6" alt=""/>NANCY
+</div>
+<!--menu-items-->
+<div class="hidden space-x-6 md:flex text-white">
+  <a href="#about" class="hover:text-pink-700 flex items-center">
+    <img class="w-6 mr-2" src="images/hibiscus.png" alt="">
+    About Me
+  </a>
+  <a href="https://reinanancy.hashnode.dev/" target="_blank" class="hover:text-pink-700 flex items-center">
+    <img class="w-6 mr-2" src="images/white-heart.gif" alt="">
+    Blog
+  </a>
+  <a href="#projects" class="hover:text-pink-700 hover:border-b-2 flex items-center">
+    <img class="w-6 mr-2" src="images/hibiscus.png" alt="">
+    Projects
+  </a>
+  <a href="#contact" class="hover:text-pink-700 hover:border-b-2 flex items-center">
+          <img class="w-6 mr-2" src="images/white-heart.gif" alt="">
+          Contact
+        </a>
+</div>
+         <!-- Hamburger Icon -->
+         <button
+         id="menu-btn"
+         class="block hamburger md:hidden focus:outline-none"
+       >
+         <span class="hamburger-top"></span>
+         <span class="hamburger-middle"></span>
+         <span class="hamburger-bottom"></span>
+       </button>
+
+
+<div class="md:hidden">
+  <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-gray-900 text-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+    <a href="#about" class="hover:text-pink-700 flex items-center">
+      <img class="w-6 mr-2" src="images/hibiscus.png" alt="">
+      About Me
+    </a>
+    <a href="https://reinanancy.hashnode.dev/" target="_blank" class="hover:text-pink-700 flex items-center">
+      <img class="w-6 mr-2" src="images/white-heart.gif" alt="">
+      Blog
+    </a>
+    <a href="#projects" class="hover:text-pink-700 hover:border-b-2 flex items-center">
+      <img class="w-6 mr-2" src="images/hibiscus.png" alt="">
+      Projects
+    </a>
+    <a href="#contact" class="hover:text-pink-700 hover:border-b-2 flex items-center">
+            <img class="w-6 mr-2" src="images/white-heart.gif" alt="">
+            Contact
+          </a>
+   </div>
+  </div>
+
+    </div>
+</nav>
+  
+<!--Hero-->
+<section class="bg-gray-900 mt-12 px-6 py-12 text-white" id="social">
+  <div class="flex flex-col md:flex-row items-center">
+    <div class="flex-none m-8 p-4 md:w-1/3">
+      <img src="images/meme.jpg" alt="your-image" class="h-80 w-full object-cover rounded-lg">
+    </div>
+    <div class="mx-auto flex flex-col md:w-1/2 justify-center">
+      <h1 class="text-5xl font-bold m-8 text-center">Hello, I'm <span class="font-extrabold text-pink-700">Nancy</span></h1>
+      <p class="text-center text-lg mb-8">A Frontend Developer</p>
+      <div class="mt-auto">
+        <div class="flex items-center justify-center md:m-3">
+          <a href="https://github.com/moni-nancy" class="m-4  hover:animate-bounce">
+            <img class="w-18 bg-white hover:bg-pink-700" src="images/bxl-github.svg" alt="Github Icon">
+          </a>
+          <a href="https://twitter.com/Nancy_Olatuja" class="m-4  hover:animate-bounce">
+            <img class="w-18 bg-white hover:bg-pink-700" src="images/bxl-twitter.svg" alt="Twitter Icon">
+          </a>
+          <a href="https://www.instagram.com/nancy_olatuja/" class="m-4  hover:animate-bounce">
+            <img class="w-18 bg-white hover:bg-pink-700" src="images/bxl-instagram.svg" alt="Instagram Icon">
+          </a>
+          <a href="www.linkedin.com/in/olatuja-nancy" class="m-4  hover:animate-bounce">
+            <img class="w-18 bg-white hover:bg-pink-700" src="images/bxl-linkedin-square.svg" alt="LinkedIn Icon">
+          </a>
         </div>
       </div>
-
-    </section>
-<!--Skillset-->
-<!--Skillset-->   
- <section class="box bg-blue-500 text-white font-text py-12" id="skills">
-  <div class="container mx-auto px-6">
-     <h1 class="pb-5 text-4xl font-bold text-center mb-8"><span class="text-yellow-400 font-header">SKILL</span>SET</h1>
-    <div class="flex flex-wrap justify-center text-center">
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">HTML</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400 ">CSS</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">GIT</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">GITHUB</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">JAVASCRIPT</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">TAILWINDCSS</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">CANVA</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">TEAMWORK</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">CREATIVITY</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">PROBLEM SOLVING</div>
-     <div class="rounded m-3 p-2 font-semibold shadow-2xl border border-yellow-400">G-SUITES</div>
     </div>
   </div>
-  
-  </section>
+</section>
+
+
+<!--About me-->
+<section class="bg-gray-900 flex flex-col border-t md:flex-row text-white" id="about">
+    <div class="md:w-1/2">
+      <div class="flex item-center justify-center">
+        <img src="images/Hello world.gif" class=" h-36 mt-10"  alt="">
+      </div>
+      <div class="box bg-gray-900 text-white font-text py-12" id="skills">
+        <div class="container mx-auto px-6">
+           <h1 class="pb-5 text-4xl font-bold text-center mb-8"><span class="text-pink-700 font-header">SKILL</span>/ TOOLS</h1>
+          <div class="flex flex-wrap justify-center text-center">
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">HTML</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce ">CSS</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">GIT</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">GITHUB</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">JAVASCRIPT</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">TAILWINDCSS</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">CANVA</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">TEAMWORK</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">CREATIVITY</div>
+           <div class="rounded font-semibold m-3 p-2 font- shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">PROBLEM SOLVING</div>
+           <div class="rounded font-semibold m-3 p-2 font- shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">BOOTSTRAP</div>
+           <div class="rounded m-3 p-2 font-semibold shadow-gray-800 shadow-2xl border border-pink-700  hover:animate-bounce">G-SUITES</div>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-900 md:w-1/2 flex flex-col justify-center items-center py-4 px-8">
+      <h2 class="text-4xl font-bold text-white mb-4">ABOUT <span class="text-pink-700">ME</span></h2>
+      <div class="text-white text-lg md:text-xl mb-4">
+        <span class="text-pink-700 font-bold">Goals: </span>To use various markup and programming languages to create interactive, accessible, functional, and creative user-facing features, while also taking reusability and page loading optimization into account.
+      </div>
+      <div class="text-white text-lg md:text-xl mb-4">
+        <span class="text-pink-700 font-bold">Hobbies: </span> Baking, Reading Novels, Nature Photography, playing guitar and learning a new language.
+      </div>
+      <div class="text-white text-lg md:text-xl mb-4">
+        <span class="text-pink-700 font-bold">Likes: </span> Coffee, Chocolate, Lofi-Mix, Long walks and Aesthetic pictures
+      </div>
+    </div>
+    
+
+</section>
 
  <!--Projects-->
-    <section class=" bg-yellow-400 py-12" id="projects">
+    <section class=" bg-gray-900 py-12 border-t border-b md:md\:w-1/2" id="projects">
       <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-white text-center mb-8">MY <span class="text-blue-500">PROJECTS</span></h2>
+        <h2 class="text-4xl font-bold text-white text-center mb-8">MY <span class="text-pink-700">PROJECTS</span></h2>
         <div class="flex flex-wrap -mx-6">
           <div class="w-full md:w-1/2 px-6">
-            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+            <div class="bg-gray-900 rounded-lg shadow-2xl p-6 mb-6">
               <h3 class="text-2xl font-bold text-white mb-2">Landing page</h3>
               <p class="text-white leading-loose mb-4">My frontendmentor submission for the sunnyside landing page. It can beviewed on different screensize and I used semantic HTML, CSS, and a little JavaScript for the mobile menu.</p>
-              <a href="https://sunnyside-agency-landing-page-main-ptga.vercel.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
+              <a href="https://sunnyside-agency-landing-page-main-ptga.vercel.app/" class="text-white hover:text-pink-700" target="_blank">View Project Live</a>
             </div>
           </div>
 					
           <div class="w-full md:w-1/2 px-6">
-            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+            <div class="bg-gray-900 rounded-lg shadow-2xl p-6 mb-6">
               <h3 class="text-2xl font-bold text-white mb-2">Restaurant Webpage</h3>
               <p class="text-white leading-loose mb-4">One of my favourite projects, I created the logo and giftcards with Canva, website was made with HTML, CSS and a little of JavaScript for the mobile menu. It works on different screen size too</p>
-              <a href="https://cuisineint.netlify.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
+              <a href="https://cuisineint.netlify.app/" class="text-white hover:text-pink-700" target="_blank">View Project Live</a>
             </div>
           </div>
 
         </div>
 
-        <div class="flex flex-wrap -mx-6">
-         <div class="w-full md:w-1/2 px-6">
-              <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
-                <h3 class="text-2xl font-bold text-white mb-2">Netflix-Landing Page</h3>
-                <p class="text-white leading-loose mb-4">This is a netflix clone made with semantic HTML and CSS. I used my knowledge on HTML to create the video embedded in an imsge</p>
-                <a href="https://stuternnetflixliveproject.netlify.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
-              </div>
-            </div>
-					
+        <div class="flex flex-wrap -mx-6">  
           <div class="w-full md:w-1/2 px-6">
-            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
-              <h3 class="text-2xl font-bold text-white mb-2">My Instagram Home Page</h3>
-              <p class="text-white leading-loose mb-4">Created with HTML and CSS, I made the homepage of my instagram account</p>
-              <a href="https://stuternnetflixliveproject.netlify.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap -mx-6">
-            
-            
-          <div class="w-full md:w-1/2 px-6">
-            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+            <div class="bg-gray-900 rounded-lg shadow-2xl p-6 mb-6">
               <h3 class="text-2xl font-bold text-white mb-2">Udemy-Landing Page</h3>
               <p class="text-white leading-loose mb-4">Udemy landing page clone. I used HTML and CSS to recreate it and emphasis on positions for the various aspects, it is not mobile responsive</p>
-              <a href="https://udemyclone-stuternproject.netlify.app/" class="text-white hover:text-blue-700" target="_blank">View Project Live</a>
+              <a href="https://udemyclone-stuternproject.netlify.app/" class="text-white hover:text-pink-700" target="_blank">View Project Live</a>
             </div>
           </div>
           <div class="w-full md:w-1/2 px-6">
-            <div class="bg-yellow-400 rounded-lg shadow-lg p-6 mb-6">
+            <div class="bg-gray-900 rounded-lg shadow-lg p-6 mb-6">
               <h3 class="text-2xl font-bold text-white mb-2">Others</h3>
               <p class="text-white leading-loose mb-4">Some of my projects are still in development phase.</p>
-              <a href="#" class="text-white hover:text-blue-700" target="_blank">More...</a>
+              <a href="#" class="text-white hover:text-pink-700" target="_blank">More...</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-blue-500 py-12" id="contact">
-      <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-white mb-8 text-center">CONTACT <span class="text-yellow-400">ME</span> </h2>
-        <div class="flex flex-wrap justify-center">
-          <div class="p-6 text-center">
-            <a href="mailto:olatujanancy@gmail.com" class="inline-block" target="_top">
-              <img src="images/bxl-gmail.svg" alt="gmail " class="w-20 h-20 object-cover hover:shadow-md border border-yellow-400 m-3 p-2 rounded-md hover:bg-yellow-400">
-            </a>
-            <a href="https://github.com/moni-nancy" class="inline-block" target="_top">
-              <img src="images/bxl-github.svg" alt="github " class="w-20 h-20 object-cover hover:shadow-md border border-yellow-400 m-3 p-2 rounded-md hover:bg-yellow-400">
-            </a>
-            <a href="https://twitter.com/Nancy_Olatuja" class="inline-block" target="_top">
-              <img src="images/bxl-twitter.svg" alt="twitter " class="w-20 h-20 object-cover hover:shadow-md border border-yellow-400 m-3 p-2 rounded-md hover:bg-yellow-400">
-            </a>
-            <a href="www.linkedin.com/in/olatuja-nancy" class="inline-block" target="_top">
-              <img src="images/bxl-linkedin.svg" alt="linkedin " class="w-20 h-20 object-cover hover:shadow-md border border-yellow-400 m-3 p-2 rounded-md hover:bg-yellow-400">
-            </a>
-					</div>
-					</div>
-			</div>
-		</section>
-
-		<footer class="bg-yellow-400 text-white py-4">
-      <div class="container mx-auto px-6">
-        <div class="flex justify-center items-center">
-          <p class="text-sm">© 2023 My Portfolio. All Rights Reserved.</p>
-          
-					</div>
-				</div>
-			</footer>
+    <!--Contact-->
+    <div class="bg-gray-900 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-4xl font-bold text-white text-center mb-8">
+          <h2 class="sm:text-4xl md:text-center">
+            CONTACT <span class="text-pink-700">ME</span> 
+          </h2>
+        </div>
+        <div class="mt-12">
+          <div class="grid grid-cols-1 md:grid-cols-2  gap-8">
+            <div class="flex flex-col items-center mx-auto">
+              <img class="h-24 w-24 rounded-full bg-gray-300" src="images/bxl-gmail.svg" alt="">
+              <h3 class="mt-4 text-lg font-medium text-white">Email</h3>
+              <p class="mt-2 text-sm text-gray-400">
+                Send me an email at <a href="mailto:olatujanancy@gmail.com" class="underline">Gmail</a>.
+              </p>
+            </div>
+            
+            <div class="flex flex-col items-center">
+              <img class="h-24 w-24 rounded-full bg-gray-300" src="images/socials.png" alt="">
+              <h3 class="mt-4 text-lg font-medium text-gray-300">Social Media</h3>
+              <p class="mt-2 text-sm text-gray-400">
+                Connect with me on <a href="#" class="underline">my socials</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
-		</body>
-	</html>
+    
+<footer class="border-t bg-gray-900 flex justify-center items-center">
+  <p class="text-gray-400 m-3"> Designed & Created by Nancy Olatuja</p>
+</footer>
+
+<script src="js/nav.js"></script>
+
+</body>
+</html>

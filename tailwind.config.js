@@ -9,10 +9,6 @@ module.exports = {
       xl: '1440px'
      },
     extend: {
-      colors: {
-       hoverOne:'#fef3c7',
-       hoverTwo:'#60a5fa'
-      },
       boxShadow: {
        '2xl': ' 5px 5px  rgba(0, 0, 0, 0.164)'
       }
